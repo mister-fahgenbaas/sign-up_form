@@ -1,0 +1,46 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url("./Norse-Bold.otf");
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+}
+
+@font-face {
+    font-family: "norse-bold";
+    src: url("/home/tam/repos/sign-up_form/Norse-Bold.otf");
+}
+
+.card {
+    background-image: url("/home/tam/repos/sign-up_form/parrot.jpg");
+    height: 100vh;
+    width: 640px;
+    position: relative;
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+	background: rgb(0 0 0 / 40%);
+    height: 8rem;
+	padding: 1rem 0;
+    color: white;
+    position: absolute;
+    top: 250px;
+    width: 100%;
+}
+
+.card-body img {
+    height: 100%;
+    width: auto;
+}
+
+.card-body > p {
+    font: 7rem "norse-bold";
+    margin: 0;
+}
