@@ -4,11 +4,12 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
     <title>Create account</title>
+    <script src="./script.js" defer></script>
   </head>
-  <body>
-
+  <body onload="clear_forms()">
+  <div class="all">
     <div class="card">
-      <img src="parrot.jpg" />
+      <!-- <img src="parrot.jpg" /> -->
       <div class="card-body">
         <img src="odin-lined.png" />
         <p>ODIN</p>
@@ -16,8 +17,68 @@
     </div>
 
     <div class="main">
-      <p>MAIN CONTENT</p>
-    </div>
 
+      <div class="main-hero">
+        <p>
+          This is not a real online service! You know you need something like this 
+          in your life to help you realize your deepest dreams. Sign up <em>now</em>
+          to get started.
+          <p>
+          You <em>know</em> you want to.
+          </p>
+        </p>
+      </div>
+
+      <div class="main-form">
+        <p>Let's do this!</p>
+        <form action="" method="post" id="sign-up">
+          
+            <div>
+              <label for="first_name">FIRST NAME</label>
+              <input id="first_name" name="first_name" type="text" required>
+            </div>
+
+            <div>
+              <label for="last_name">LAST NAME</label>
+              <input id="last_name" name="last_name" type="text" required>
+            </div>
+
+            <div>
+              <label for="email">EMAIL</label>
+              <input id="email" name="email" type="email" required>
+            </div>
+
+            <div>
+              <label for="phone_number">PHONE NUMBER</label>
+              <input id="phone_number" name="phone_number" type="text" pattern="(\d{3}){2}-\d{4}" required>
+            </div>
+
+            <div class="password-container">
+              <label for="password">PASSWORD</label>
+              <input id="password" name="password" type="password" required>
+            </div>
+
+            <div>
+              <label for="confirm_password">CONFIRM PASSWORD</label>
+              <input id="confirm_password" name="confirm_password" type="password" required>
+            </div>
+
+            <div class="err-msg">
+              <span aria-label="required">*</span> Passwords don't match
+            </div>
+        </form>
+      </div>
+
+      <div class="main-footer">
+        <button class="btn" form="sign-up" type="button">Create Account</button>
+        <div class="login">
+          <p>
+            Already have an account? <a href=""><strong>Log in</strong></a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
   </body>
 </html>
