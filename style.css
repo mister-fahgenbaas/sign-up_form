@@ -377,6 +377,10 @@ body {
     width: 640px;   
     flex: 0 0 auto;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 
 }
 
@@ -386,11 +390,11 @@ body {
     align-items: center;
     column-gap: 5px;
 	background: rgb(0 0 0 / 40%);
-    height: 8rem;
+    height: 12rem;
 	padding: 1rem 0;
     color: white;
     position: absolute;
-    top: 250px;
+    top: 270px;
     width: 100%;
 }
 
@@ -401,11 +405,20 @@ body {
 }
 
 .card-body > p {
-    font: 7rem "norse-bold";
+    font: 8rem "norse-bold";
     margin: 0;
 }
 
-/*** MAIN CONTENT STYLING ***/
+.card p a:visited, .card p a:link {
+    color: white;
+}
+
+.photo-credit {
+    color: white;
+    background-color: rgb(0 0 0 / 30%);
+}
+
+/*** MAIN SECTION STYLING ***/
 
 .main {
     display: flex;
@@ -415,17 +428,17 @@ body {
     flex: 1;
     font-size: 24pt;
     font-weight: 500;
-    background: #f9fafb
+    background: #f9fafb;
+    color: #222;    /* Very dark grey */
 }
 
 .main > * {
     /* padding: 20px 11rem 0 3rem*/;
-    padding-left: 3rem;
+    padding-left: 4rem;
 }
 
 .main-hero {
-    /* background: #f9fafb*/;
-    /* flex: 1*/;
+    padding-right: 47px;
 }
 
 .main-form {
@@ -447,6 +460,7 @@ form {
     display: flex;
     flex-wrap: wrap;
     font-size: 12pt;
+    padding-right: 6rem;
 }
 
 form > div {
@@ -465,14 +479,15 @@ form > div.err-msg{
 
 label {
     display: block;
-    font-size: 11pt;
+    font-size: 12pt;
+    letter-spacing: 2px;
     color: rgb(100, 100, 100);
 }
 
 input {
     border-radius: 5px;
     border: 1px solid #E5E7EB;
-    padding: 6px 10px;
+    padding: 8px 70px;
 }
 
 input:focus {
@@ -490,14 +505,14 @@ input:focus {
 }
 
 .btn {
-    padding: 1rem 2rem;
+    padding: 1rem 4rem;
     text-align: center;
     background-color: #42299b;
     color: white;
     border: none;
     border-radius: 12px;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 1.4rem;
     box-shadow: 3px 3px 6px grey; 
     position: relative;
 }
