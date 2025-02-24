@@ -366,13 +366,13 @@ body {
 
 @font-face {
     font-family: "norse-bold";
-    src: url("/home/tam/repos/sign-up_form/Norse-Bold.otf");
+    src: url("./Norse-Bold.otf");
 }
 
 /*** CARD STYLING ***/
 
 .card {
-    background-image: url("/home/tam/repos/sign-up_form/parrot.jpg");
+    background-image: url("./parrot.jpg");
     height: 960px;
     width: 640px;   
     flex: 0 0 auto;
@@ -443,7 +443,7 @@ body {
 
 .main-form {
     --pad-tb: 24px;
-    padding-top: var(--pad-tb);    /*DO NOT CHANGE! THE BOTTOM WILL LOOK CORRECT ONCE THE "PASSWORDS DO NOT MATCH" TEXT IS IN PLACE.JJ:W
+    padding-top: var(--pad-tb);    /*DO NOT CHANGE! THE BOTTOM WILL LOOK CORRECT ONCE THE "PASSWORDS DO NOT MATCH" TEXT IS IN PLACE
                                     */
     padding-bottom: var(--pad-tb);
     background: #ffffff;
@@ -488,7 +488,8 @@ input {
     border-radius: 5px;
     border: 1px solid #E5E7EB;
     padding: 8px 5px;
-    width: 80%;
+    #width: 80%;
+    width: 20rem;
 }
 
 input:focus {
