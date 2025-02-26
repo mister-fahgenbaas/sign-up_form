@@ -504,8 +504,12 @@ input:focus {
     outline: none;    /* Get rid of the auto blue border on focus */
 }
 
+input#password {
+    margin-bottom: 0.1rem;
+}
+
 .main-form > p {
-    margin-bottom: 1.5rem;
+    margin: 1rem 0 2rem 0;
 }
 
 .error {
