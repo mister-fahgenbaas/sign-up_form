@@ -443,6 +443,7 @@ body {
 
 .main-form {
     --pad-tb: 24px;
+    height: 40%;
     padding-top: var(--pad-tb);    /*DO NOT CHANGE! THE BOTTOM WILL LOOK CORRECT ONCE THE "PASSWORDS DO NOT MATCH" TEXT IS IN PLACE
                                     */
     padding-bottom: var(--pad-tb);
@@ -459,22 +460,26 @@ body {
 form {
     display: flex;
     flex-wrap: wrap;
+    gap: 3rem;
     font-size: 12pt;
     padding-right: 6rem;
 }
 
-form > div {
-    flex: 1 1 50%;
-    margin-top: 24px;
+form input {
+    margin-top: 0.5rem;
 }
 
-form > div.err-msg{
+.col-1, .col-2 {
+    flex-basis: 33%;
+}
+
+.err-msg {
     flex: 1 1 100%;
     margin: 0;
     font-size: 15px;
     font-weight: initial;
     color: red;
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 label {
@@ -490,6 +495,7 @@ input {
     padding: 8px 5px;
     #width: 80%;
     width: 20rem;
+    margin-bottom: 1.1rem;
 }
 
 input:focus {
@@ -499,7 +505,7 @@ input:focus {
 }
 
 .main-form > p {
-    margin: 0;
+    margin-bottom: 1.5rem;
 }
 
 .error {
@@ -534,3 +540,4 @@ input:focus {
 .login a {
     text-decoration: none;
 }
+
